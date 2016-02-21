@@ -49,5 +49,5 @@ group :development do
 end
 group :production do
  gem 'unicorn'
- gem 'pg’
+ gem 'pg'
 end
