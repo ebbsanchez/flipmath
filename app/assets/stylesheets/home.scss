@@ -73,6 +73,21 @@ $darkgreen  : #919c8e;
 	}
 }
 
+#about {
+	padding: 50px;
+	h2 {
+		font-size: 30px;
+		letter-spacing: 10px;
+		span {
+			font-size: 20px;
+		}
+	}
+	.block {
+		width: 500px;
+		height: 300px;
+		border: 1px solid black;
+	}
+}
 .test{
 	height:1000px;
 }

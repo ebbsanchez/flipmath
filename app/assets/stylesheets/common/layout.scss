@@ -89,10 +89,12 @@ footer {
 	}
 	#contact {
 		display: flex;
-		font-size: 20px;
+		font-size: 17px;
 		display: inline-block;
 		p {
 			text-align: left;
+			margin: 5px 0;
+			color: #727272;
 			i {
 				margin: 0 10px;
 			}
