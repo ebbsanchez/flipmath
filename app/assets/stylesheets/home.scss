@@ -41,6 +41,8 @@ $darkgreen  : #919c8e;
 #points {
 	position: relative;
 	margin: 0;
+	padding: 50px;
+
 	.cell {
 		position: relative;
 		padding: 30px 30px 30px 50px;
@@ -60,22 +62,18 @@ $darkgreen  : #919c8e;
 		}	
 	}
 
+}
 
-	
-	hr {
-		width: 80%;
-		margin: auto;
-		border: 0;
-		height: 0;
-		border-top: 1px solid rgba(0,0,0,0.1);
-
-		float: none;
-	}
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0,0,0,0.8);
+	float: none;
 }
 
 #about {
 	padding: 50px;
-	h2 {
+	h1 {
 		font-size: 30px;
 		letter-spacing: 10px;
 		span {
@@ -88,6 +86,62 @@ $darkgreen  : #919c8e;
 		border: 1px solid black;
 	}
 }
+
+#methods {
+	.method {
+		height: 400px;
+		position: relative;
+		overflow: hidden;
+		color: #f4f4f4;
+		&:hover .hover-vis {
+			opacity: 1;
+			transition: opacity ease 0.1s;
+		}
+		h2 {
+			z-index: 5;
+			position: relative;
+			padding: 30px 50px;
+			margin: 0;
+			font-size: 23px;
+		}
+		p {
+			padding: 0 30px;
+			font-size: 18px;
+		}
+	}
+	#method1 {
+		background: image-url('method1.jpg') no-repeat center center;
+	}
+	#method2 {
+		background: image-url('method2.jpg') no-repeat center center;
+	}
+	#method3 {
+		background: image-url('method3.jpg') no-repeat center center;
+	}
+	#method4 {
+		background: image-url('method4.jpg') no-repeat center center;
+
+	}
+}
+.bigbanner {
+	font-size: 30px;
+	letter-spacing: 10px;
+	padding: 50px;
+
+}
+.text-center {
+	text-align: center;
+}
+.hover-vis {
+	opacity: 0;
+}
+.row{
+	margin: 0 0 -1px 0 ;
+	&>* {
+		padding: 0;
+	}
+}
+
 .test{
 	height:1000px;
 }

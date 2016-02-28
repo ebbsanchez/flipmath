@@ -5,6 +5,10 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( home.css )
 Rails.application.config.assets.precompile += %w( skel/skel.js )
 Rails.application.config.assets.precompile += %w( skel/skel-layout.js )
+Rails.application.config.assets.precompile += %w( method1.jpg )
+Rails.application.config.assets.precompile += %w( method2.jpg )
+Rails.application.config.assets.precompile += %w( method3.jpg )
+Rails.application.config.assets.precompile += %w( method4.jpg )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
