@@ -37,7 +37,9 @@ $darkgreen  : #919c8e;
 	height: 100%;
 	width: 100%;
 }
-
+article {
+	font-family: sourcehansans-tc, sans-serif;
+}
 #points {
 	position: relative;
 	margin: 0;
@@ -67,19 +69,11 @@ $darkgreen  : #919c8e;
 hr {
 	border: 0;
 	height: 0;
-	border-top: 1px solid rgba(0,0,0,0.8);
+	border-top: 1px solid rgba(0,0,0,0.5);
 	float: none;
 }
 
 #about {
-	padding: 50px;
-	h1 {
-		font-size: 30px;
-		letter-spacing: 10px;
-		span {
-			font-size: 20px;
-		}
-	}
 	.block {
 		width: 500px;
 		height: 300px;
@@ -102,7 +96,7 @@ hr {
 			position: relative;
 			padding: 30px 50px;
 			margin: 0;
-			font-size: 23px;
+			font-size: 40px;
 		}
 		p {
 			padding: 0 30px;
@@ -123,14 +117,89 @@ hr {
 
 	}
 }
-.bigbanner {
+
+#wheel {
 	font-size: 30px;
+	height: 300px;
+	padding-bottom: 50px; 
+	.wheel-container {
+		position: relative;
+		
+		.term1 {
+			display: none;
+			position: absolute;
+			top: -55px;
+			transition: all ease 0.5s;
+
+		}
+		.term2 {
+			opacity: 0.1;
+			position: absolute;
+			top: -165px;
+			transition: all ease 0.5s;
+
+		}
+		.term3 {
+			opacity: 0.3;
+			position: absolute;
+			top: -110px;
+			transition: all ease 0.5s;
+
+		}
+		.term4 {
+			opacity: 1;	
+			position: absolute;
+			top: -55px;
+			transition: all ease 0.5s;
+
+		}
+		.term5 {
+			opacity: 0.3;
+			position: absolute;
+			top: 0px;
+			transition: all ease 0.5s;
+
+		}
+		.term6 {
+			opacity: 0.1; 
+			position: absolute;
+			top: 55px;
+			transition: all ease 0.5s;
+
+		}
+		.term7 {
+			display: none;
+			position: absolute;
+			top: 110px;		
+			transition: all ease 0.5s;
+
+		}
+	}
+	.wheel-r {
+		margin: 20px 0;
+		position: relative;
+		text-align: center;
+		width:100%;
+		
+	}
+}
+.bigbanner {
+	font-size: 45px;
 	letter-spacing: 10px;
 	padding: 50px;
-
+}
+.little_describe {
+	font-size: 20px;
+	padding-left: 20px;
+}
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	
 }
 .text-center {
-	text-align: center;
+	text-align: center; 
 }
 .hover-vis {
 	opacity: 0;
@@ -141,7 +210,13 @@ hr {
 		padding: 0;
 	}
 }
-
+.light {
+	color: rgba(0,0,0,0.3);
+}
+.col {
+	/*border: 1px dashed red;*/
+	
+}
 .test{
 	height:1000px;
 }
