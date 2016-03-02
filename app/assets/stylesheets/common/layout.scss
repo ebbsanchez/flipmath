@@ -1,11 +1,18 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+$break-small: 736px;
+$information-phone: "only screen and (max-width: 736px)";
+
+
 $red : #cf4b5e;
 $lightgreen : #b9dabb;
 $green      : #74ba9c;
 $yellow     : #f6e09e;
 $darkgreen  : #919c8e;
+
+
+
 
 * {
 	-webkit-box-sizing: border-box;
@@ -14,6 +21,21 @@ $darkgreen  : #919c8e;
 }
 
 body { margin: 0; padding: 0; background-color: transparent;}
+#menu-button {
+	width: 50px;
+	height: 50px;
+	border: 1px solid $green;
+	background-color: $green;
+	position: fixed;
+	z-index: 50;
+	border-radius: 5px;
+	top: 5px;
+	left: 5px;
+	display: none;
+	@media #{$information-phone} {
+		display: block;
+	}
+}
 nav {
 	position: fixed;
 	top: 0;
@@ -23,6 +45,9 @@ nav {
 	background-color: rgba(244,244,244,1);
 	text-align: center;
 	z-index: 100;
+	@media screen and (max-width: $break-small) {
+		display: none;
+	}
 	ul {
 		margin: auto;
 		padding: 0;
@@ -111,3 +136,4 @@ footer {
 		}
 	}	
 }
+

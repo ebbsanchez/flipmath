@@ -1,3 +1,6 @@
+$break-small: 736px;
+$information-phone: "only screen and (max-width: 736px)";
+
 $red : #cf4b5e;
 $lightgreen : #b9dabb;
 $green      : #74ba9c;
@@ -9,6 +12,7 @@ $darkgreen  : #919c8e;
 	-webkit-background-size: cover;
 	background-size: cover;
 	height: 665px;
+
 	#textslider {
 		ul {
 			list-style: none;
@@ -22,6 +26,10 @@ $darkgreen  : #919c8e;
 			text-align: center;
 			position: absolute;
 			width: 100%;
+			@media #{$information-phone} {
+				font-size: 50px;
+			}		
+
 		}
 	}
 	p {
@@ -29,6 +37,10 @@ $darkgreen  : #919c8e;
 		color: #fff;
 		font-size: 20px;
 		text-align: center;
+		@media #{$information-phone} {
+			margin: 200px 0 0 0;
+			padding: 0 10px;
+		}
 	}
 }
 
@@ -48,6 +60,9 @@ article {
 	.cell {
 		position: relative;
 		padding: 30px 30px 30px 50px;
+		@media #{$information-phone} {
+			padding: 0;
+		}
 		.h1line {
 			width: 50px;
 			border: 0;
