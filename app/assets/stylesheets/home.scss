@@ -8,7 +8,7 @@ $yellow     : #f6e09e;
 $darkgreen  : #919c8e;
 
 @media screen and (max-width: 736px) {
-	#banner: background: #fff;
+	#banner {background: #fff;}
 }
 #banner {
 	background: image-url('header.png') no-repeat center center fixed ;
