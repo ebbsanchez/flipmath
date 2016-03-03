@@ -24,8 +24,10 @@ body { margin: 0; padding: 0; background-color: transparent;}
 #menu-button {
 	width: 50px;
 	height: 50px;
-	border: 1px solid $green;
-	background-color: $green;
+	border: 1px solid #444444;
+	background:  image-url('menu.png');
+	-webkit-background-size: contain;
+	background-size: contain;
 	position: fixed;
 	z-index: 50;
 	border-radius: 5px;
@@ -34,6 +36,9 @@ body { margin: 0; padding: 0; background-color: transparent;}
 	display: none;
 	@media #{$information-phone} {
 		display: block;
+		&:hover + nav {
+			display: block;
+		}
 	}
 }
 nav {
@@ -47,6 +52,8 @@ nav {
 	z-index: 100;
 	@media screen and (max-width: $break-small) {
 		display: none;
+		height: auto;
+		z-index: 1;
 	}
 	ul {
 		margin: auto;
@@ -66,6 +73,9 @@ nav {
 			transition: all ease 0.3s;
 			&:hover {
 				box-shadow: inset 0 -100px 0 0 $lightgreen;
+			}
+			@media #{$information-phone} {
+				display: block;
 			}
 		}
 		li:first-child {

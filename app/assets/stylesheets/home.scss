@@ -75,6 +75,10 @@ article {
 			position: absolute;
 			top: 60px;
 			left: 15px;
+			@media #{$information-phone} {
+				top: 55px;
+				left: 25px;
+			}
 		}
 		h2 {
 			padding-left: 25px;
