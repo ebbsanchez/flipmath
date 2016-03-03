@@ -56,7 +56,9 @@ article {
 	position: relative;
 	margin: 0;
 	padding: 50px;
-
+	@media #{$information-phone} {
+		padding: 15px 5px;
+	}
 	.cell {
 		position: relative;
 		padding: 30px 30px 30px 50px;
@@ -136,7 +138,10 @@ hr {
 #wheel {
 	font-size: 30px;
 	height: 300px;
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
+	@media #{$information-phone} {
+		height: 500px;
+	}
 	.wheel-container {
 		position: relative;
 		
@@ -152,6 +157,9 @@ hr {
 			position: absolute;
 			top: -165px;
 			transition: all ease 0.5s;
+			@media #{$information-phone} {
+				opacity: 0;
+			}
 
 		}
 		.term3 {
@@ -159,6 +167,9 @@ hr {
 			position: absolute;
 			top: -110px;
 			transition: all ease 0.5s;
+			@media #{$information-phone} {
+				opacity: 0;
+			}
 
 		}
 		.term4 {
@@ -173,6 +184,9 @@ hr {
 			position: absolute;
 			top: 0px;
 			transition: all ease 0.5s;
+			@media #{$information-phone} {
+				opacity: 0;
+			}
 
 		}
 		.term6 {
@@ -180,6 +194,9 @@ hr {
 			position: absolute;
 			top: 55px;
 			transition: all ease 0.5s;
+			@media #{$information-phone} {
+				opacity: 0;
+			}
 
 		}
 		.term7 {
@@ -202,16 +219,28 @@ hr {
 	font-size: 45px;
 	letter-spacing: 10px;
 	padding: 50px;
+	@media #{$information-phone} {
+		padding: 15px 15px;
+		font-size: 40px;
+	}
 }
 .little_describe {
 	font-size: 20px;
 	padding-left: 20px;
 	letter-spacing: 2px;
+	@media #{$information-phone} {
+		display: block;
+		padding-top: 10px;
+		padding-left: 0px;
+	}
 }
 .flex-center {
 	display: flex;
 	align-items: center;
 	justify-items: center;
+	@media #{$information-phone} {
+		display: block;
+	}
 	
 }
 .text-center {
@@ -230,9 +259,14 @@ hr {
 	color: rgba(0,0,0,0.3);
 }
 .col {
-	/*border: 1px dashed red;*/
-	
+	/*border: 1px dashed red;*/	
 }
+.pad {
+	@media #{information-phone} {
+		display: none;
+	}
+}
+
 .test{
 	height:1000px;
 }
