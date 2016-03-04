@@ -34,11 +34,13 @@ body { margin: 0; padding: 0; background-color: transparent;}
 	top: 5px;
 	left: 5px;
 	display: none;
+	#touch-menu {
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
 	@media #{$information-phone} {
 		display: block;
-		&:active + nav {
-			display: block;
-		}
 	}
 }
 nav {
