@@ -222,6 +222,21 @@ hr {
 		
 	}
 }
+#map {
+	height: 350px;
+	iframe {
+		width: 100%;
+		height: 350px;
+	}
+}
+
+#billboard {
+	.article-icon {
+		width: 200px;
+	}
+}
+/* global down */
+
 .bigbanner {
 	font-size: 45px;
 	letter-spacing: 10px;

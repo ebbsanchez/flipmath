@@ -95,18 +95,12 @@ nav {
 		height: auto;
 	}
 }
-#map {
-	height: 350px;
-	iframe {
-		width: 100%;
-		height: 350px;
-	}
-}
+
 footer {
 	background-color: #272220;
 	position: relative;
 	width: 100%;
-	height: 85px;
+	height: auto;
 	@media #{$information-phone} {
 		height: 175px;
 	}
@@ -138,6 +132,7 @@ footer {
 		display: flex;
 		font-size: 20px;
 		display: inline-block;
+		padding: 5px 0;
 		@media #{$information-phone} {
 			
 			width: 100%;
@@ -145,8 +140,11 @@ footer {
 		}
 		p {
 			text-align: left;
-			margin: 15px 0;
+			margin: 0;
+			padding: 0;
 			color: #f3f3f3;
+			height: 30px;
+
 			i {
 				margin: 0 10px;
 			}
