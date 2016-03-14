@@ -47,6 +47,7 @@ group :development do
 
   #active admin
   gem 'activeadmin', github: 'activeadmin'
+  gem 'devise'
 end
 group :production do
  gem 'unicorn'
