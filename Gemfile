@@ -52,4 +52,6 @@ end
 group :production do
  gem 'unicorn'
  gem 'pg'
+ gem 'activeadmin', github: 'activeadmin'
+ gem 'devise'
 end
