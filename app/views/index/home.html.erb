@@ -18,6 +18,10 @@
 		<p>這裡是一個固定的小段落，來放對於上面大標題的補充解釋，此處並不會隨著上面文字而變動</p>
 	</div>
 </header>
+<!-- activeadmin notice -->
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<!--  -->
 <article id="points" class="row">
 	<div class="4u 12u(small) cell">
 		<hr class="h1line">
@@ -46,6 +50,12 @@
 <article id="about">
 	<h1 class="bigbanner">關於補習班<span class="little_describe">這是一個小標題</span></h1>
 	
+	<ul>
+		<li>教育是最棒的投資，科技在進步，教育更應翻轉，但台灣教育理念停留在恐龍時代。</li>
+		<li>翻轉式教育，能造出符合這時代有創造力，有理想，未來人才。</li>
+		<li>學生總是說「我會」，但答題常常寫錯，因為有太多解題細節並沒有注意到（魔鬼藏在細節裡）</li>
+	</ul>
+	<p>題解釋標題，三個重點來凸顯不一樣，這裡是第二個虎克船長。這裡有一些內文來敘述標題解釋標題，三個重點來凸顯不一樣，這裡是第二個虎克船長第二個虎克船長。這裡有一些內文來敘述標題解釋標題，三個重點來凸顯不一樣。</p>
 </article>
 <hr />
 <article id="methods">
@@ -155,6 +165,17 @@
 <hr />
 <article id="billboard" class="text-center">
 	<%= image_tag 'ribbon.svg', class: "article-icon" %>
+	<section class="row billboard-row">
+
+		<% @billboards.each do |billboard| %>
+		<div class="3u 6u(small) celebrity ">
+		<img src=<%= billboard.image %> alt="風雲榜者" class="avatar"><br>
+		<%= billboard.name %><br>
+		<%= billboard.rank %><br>
+		<%= billboard.share %><br>
+		</div>
+		<% end %>
+	</section>	
 </article>
 <article id="map" class="row">
 	<iframe class="12u" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d920.6095770895614!2d120.3005771!3d22.637441!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x3d79128fbeef1338!2z54Sh5ZCN5pep6aSQ5bqX!5e0!3m2!1szh-TW!2stw!4v1456155777661" width="1600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

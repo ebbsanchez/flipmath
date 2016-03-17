@@ -47,9 +47,12 @@ group :development do
 
   #active admin
   gem 'activeadmin', github: 'activeadmin'
+  gem 'devise'
 end
 group :production do
  gem 'unicorn'
  gem 'pg'
  gem 'raindrops', '0.16.0'
+ gem 'activeadmin', github: 'activeadmin'
+ gem 'devise'
 end
