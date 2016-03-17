@@ -51,5 +51,4 @@ end
 group :production do
  gem 'unicorn'
  gem 'pg'
- gem 'raindrops', '0.16.0'
 end
