@@ -282,9 +282,19 @@ hr {
 		width: 200px;
 	}
 	.avatar {
-		width: 80%;
-		
+		position: relative;
+		overflow: hidden;
 		border-radius: 50%;
+		height: 300px;
+		.avatar-image {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+			right: -9999px;
+			bottom: -9999px;
+			width: 300px;
+			margin: auto;
+		}	
 	}
 	.billboard-row {
 		max-width: 1100px;
