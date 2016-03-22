@@ -5,9 +5,9 @@
 
 # Billboard avatar size fix
 avatar_fix = ->
-	avatar = $('.avatar')
-	for i of avatar
-		avatar[i].height = avatar[i].width
+	$('.avatar').each (i, val) ->
+	  $(val).css 'height', $( val ).width()
+	  return
 	return
 
 
@@ -15,6 +15,7 @@ avatar_fix = ->
 
 # Slide
 $ ->
+	avatar_fix()
 	$('#textslider > ul > li:gt(0)').hide()
  
 	setInterval ( ->

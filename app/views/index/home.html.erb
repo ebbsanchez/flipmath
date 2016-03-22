@@ -169,7 +169,9 @@
 
 		<% @billboards.each do |billboard| %>
 		<div class="3u 6u(small) celebrity ">
-		<img src=<%= billboard.image %> alt="風雲榜者" class="avatar"><br>
+		<div class="avatar">
+		<img src=<%= billboard.image %> alt="風雲榜者" class="avatar-image"><br>
+		</div>
 		<%= billboard.name %><br>
 		<%= billboard.rank %><br>
 		<%= billboard.share %><br>
