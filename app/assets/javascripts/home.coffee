@@ -6,7 +6,9 @@
 # Billboard avatar size fix
 avatar_fix = ->
 	$('.avatar').each (i, val) ->
-	  $(val).css 'height', $( val ).width()
+	  $( val ).css 'height', $( val ).width()
+	  while $( val ).height() != $( val ).width()
+	  	$( val ).css 'height', $( val ).width()
 	  return
 	return
 
@@ -15,17 +17,31 @@ avatar_fix = ->
 
 # Slide
 $ ->
-	avatar_fix()
+	setTimeout (->
+		avatar_fix()
+		return
+		),2000
+
 	$('#textslider > ul > li:gt(0)').hide()
  
 	setInterval ( ->
 		$('#textslider > ul > li:first').fadeOut(500).next().fadeIn(1000).end().appendTo '#textslider > ul'
 	), 5000
 
-	avatar_fix()
+	
 	$(window).resize ->
 		avatar_fix()
 		return
+
+	# from https://css-tricks.com/snippets/jquery/smooth-scrolling/
+	$('a[href*="#"]:not([href="#"])').click ->
+	    if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
+	      target = $(@hash)
+	      target = if target.length then target else $('[name=' + @hash.slice(1) + ']')
+	      if target.length
+	        $('html, body').animate { scrollTop: target.offset().top }, 1000
+	        return false
+	    return
 
 # wheel
 ###

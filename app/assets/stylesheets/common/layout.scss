@@ -48,7 +48,7 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 50px;
+	height: 48px;
 	background-color: rgba(244,244,244,1);
 	text-align: center;
 	z-index: 100;
@@ -79,6 +79,13 @@ nav {
 			@media #{$information-phone} {
 				display: block;
 			}
+			a, a:visited {
+				text-decoration: none;
+				color: inherit;
+				width: 100%;
+				height:100%;
+				padding: 10px;
+			}
 		}
 		li:first-child {
 			margin-left: 0;
@@ -101,36 +108,21 @@ footer {
 	position: relative;
 	width: 100%;
 	height: auto;
-	@media #{$information-phone} {
-		height: 175px;
-	}
+	text-align: center;
 	&.row{
 		margin: 0;
 	}
-	& > div {
+	/*& > div {
 		text-align: center;
 		height: 100%;
 		@media #{$information-phone} {
 			height: auto;
 		}
-	}
-	#footer-bg {
-		position: absolute;
-		top: 0;
-		left: -25px;
-		height: 100%;
-		background-color: #272220;
-		line-height: 145px;
-		font-size: 100px;
-		text-shadow: 10px 0px 10px #9a9a9a;
-		color: #f4f4f4;
-		font-weight: bolder;
-		font-family: serif;
-		padding: 30px 0;
-	}
+	}*/
+	
 	.contact {
 		display: flex;
-		font-size: 20px;
+		font-size: 17px;
 		display: inline-block;
 		padding: 5px 0;
 		@media #{$information-phone} {
@@ -138,17 +130,28 @@ footer {
 			width: 100%;
 			/*margin: -15px 0 0 0 ;*/
 		}
-		p {
-			text-align: left;
-			margin: 0;
-			padding: 0;
-			color: #f3f3f3;
-			height: 30px;
-
-			i {
-				margin: 0 10px;
-			}
+		
+	}
+	.ft-container{
+		margin: auto;
+		display: inline-block;
+		float: none;
+		margin: auto;
+		width: auto;
+	}
+	p {
+		text-align: left;
+		margin:0;
+		margin-right: 30px;
+		padding: 0;
+		color: #f3f3f3;
+		display: inline-block;
+		i {
+			margin: 0 10px;
 		}
+	}
+	p:last-child {
+		margin: 0;
 	}
 		
 }

@@ -102,7 +102,13 @@ hr {
 
 #about {
 	font-size: 18px;
-	padding-right: 40%; 
+	padding-right: 40%;
+	@media #{$information-phone}{
+		padding: 10px;
+		ul{
+			padding-left: 20px;
+		}
+	}
 	.block {
 		width: 500px;
 		height: 300px;
@@ -237,12 +243,30 @@ hr {
 			font-size: 20px;
 			margin: auto;
 			background-color: transparent;
-
+			&.pc-table {
+				display: block;
+				@media #{$information-phone} {
+					display: none;
+				}
+			}
+			&.mobile-table {
+				display: none;
+				@media #{$information-phone} {
+					display: block;
+				}
+			}
 			tbody {
-				h1,h2,h3,h4,h5,h6 { margin: 0;text-align: right;}
+				h1,h2,h3,h4,h5,h6 { 
+					margin: 0;
+					text-align: right;
+					@media #{$information-phone} {
+						text-align: center;
+					}
+				}
 				th{
 					background-color: rgba(182,238,241,0.3);
 					width: 250px;
+
 				}
 				td{
 					border-bottom: 1px solid #f4f4f4;
