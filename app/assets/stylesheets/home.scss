@@ -242,9 +242,10 @@ hr {
 	table {
 			font-size: 20px;
 			margin: auto;
+			width: auto;
 			background-color: transparent;
 			&.pc-table {
-				display: block;
+				display: inline-block;
 				@media #{$information-phone} {
 					display: none;
 				}
