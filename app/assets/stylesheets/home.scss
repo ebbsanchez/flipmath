@@ -250,10 +250,13 @@ hr {
 					display: none;
 				}
 			}
+			&>div {
+				text-align: center;
+			}
 			&.mobile-table {
 				display: none;
 				@media #{$information-phone} {
-					display: block;
+					display: inline-block;
 				}
 			}
 			tbody {
