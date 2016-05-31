@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>FlipMath</title>
+  <title>翻轉數理</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'skel/skel'%>
@@ -10,6 +10,7 @@
   <%= csrf_meta_tags %>
   <link href='//fonts.googleapis.com/css?family=EB+Garamond:400' rel='stylesheet' type='text/css'>
   <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-40310.js"></script>
+  
   <%= yield :head %>
 
   <script>
@@ -62,13 +63,36 @@
 			</div>
 		</div>
 	</div> -->
-	<div class="ft-container">
-	<p><i class="fa fa-envelope-o"></i>username@domain.com</p>
+	<div class="6u 12u(small)">
+		<h2>開課種類</h2>
+		<ul>
+			<li>國高中小班數學</li>
+			<li>國高中小班物理</li>
+			<li>國高中小班化學</li>
+			<li>國高中小班英文</li>
+			<li>另提供家教老師，歡迎來電詢問</li>
+		</ul>
+		<h2>聯絡方式</h2>
+		<ul class="footer-ul-init">
+			<li>魔法楊格教室：</li>
+			<li class="bottom-gap"><p><i class="fa fa-map-marker"></i>高雄市楠梓區清平街51巷25號</p></li>
+			<li><p><i class="fa fa-phone"></i>0930924323</p></li>
+		</ul>
+	</div>
+	<div class="6u 12u(small)">
+		<h2>教室位置</h2>
+		<button class="map-tab tab-active">魔法楊格</button>
+		<!-- <button class="map-tab ">建置中</button> -->
+		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.770095715296!2d120.33602731511589!3d22.73678508509849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0fd4ac16da03%3A0xefa180279ecd7965!2zODEx6auY6ZuE5biC5qWg5qKT5Y2A5riF5bmz6KGXNTHlt7cyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1464677823171" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	
+	
+	<!-- <div class="ft-container">
 	<p><i class="fa fa-phone"></i>0930924323</p>
 
-	<p><i class="fa fa-map-marker"></i>807 高雄市三民區火車路26號1樓</p>
-	<p><i class="fa fa-facebook"></i>翻轉數理</p>
-	</div>
+	<p><i class="fa fa-map-marker"></i>高雄市楠梓區清平街51巷25號</p>
+	<p><i class="fa fa-facebook"></i>魔法楊格</p>
+	</div> -->
 </footer>
 </body>
 </html>

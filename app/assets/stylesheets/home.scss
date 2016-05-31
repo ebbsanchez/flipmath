@@ -7,6 +7,8 @@ $green      : #74ba9c;
 $yellow     : #f6e09e;
 $darkgreen  : #919c8e;
 
+
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -59,7 +61,8 @@ article {
 }
 #points {
 	position: relative;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 1200px;
 	padding: 50px;
 	@media #{$information-phone} {
 		padding: 15px 5px;
@@ -103,6 +106,8 @@ hr {
 #about {
 	font-size: 18px;
 	padding-right: 40%;
+	margin: 0 auto;
+	max-width: 1200px;
 	@media #{$information-phone}{
 		padding: 10px;
 		ul{
@@ -120,6 +125,10 @@ hr {
 }
 
 #methods {
+	h1 {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
 	.method {
 		height: 400px;
 		position: relative;
@@ -142,16 +151,24 @@ hr {
 		}
 	}
 	#method1 {
-		background: image-url('method1.jpg') no-repeat center center;
+		background: image-url('photo/learn.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 	#method2 {
-		background: image-url('method2.jpg') no-repeat center center;
+		background: image-url('photo/student.png') no-repeat center center;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 	#method3 {
-		background: image-url('method3.jpg') no-repeat center center;
+		background: image-url('photo/teach2.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 	#method4 {
-		background: image-url('method4.jpg') no-repeat center center;
+		background: image-url('photo/teacher.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		background-size: cover;
 
 	}
 }
@@ -336,14 +353,8 @@ hr {
 		margin: 10px 0;
 	}
 }
-#map {
-	height: 350px;
-	iframe {
-		width: 100%;
-		height: 350px;
-	}
-}
-/* global down */
+
+/* global */
 
 .bigbanner {
 	font-size: 45px;

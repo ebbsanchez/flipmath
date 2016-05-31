@@ -4,7 +4,19 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Flip Math"
+  config.site_title = "翻轉數理"
+  
+  config.namespace :admin do |admin|
+    admin.build_menu do |menu|
+      menu.add label: "回到網站", url: "/", priority: 0
+
+      menu.add label: "相關網站" do |sites|
+        sites.add label: "Google",   url: "http://google.com", html_options: { target: :blank }
+        sites.add label: "Facebook", url: "http://facebook.com"
+        sites.add label: "Github",   url: "http://github.com"
+      end
+    end
+  end
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
