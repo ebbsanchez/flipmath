@@ -76,23 +76,53 @@
 		<ul class="footer-ul-init">
 			<li>魔法楊格教室：</li>
 			<li class="bottom-gap"><p><i class="fa fa-map-marker"></i>高雄市楠梓區清平街51巷25號</p></li>
-			<li><p><i class="fa fa-phone"></i>0930924323</p></li>
+			<li>鳳甲教室(鳳甲國中旁)：</li>
+			<li class="bottom-gap"><p><i class="fa fa-map-marker"></i>高雄市鳳山區凱旋路413號</p></li>
+			<li><p><i class="fa fa-phone"></i>0925039616 林老師</p></li>
 		</ul>
+
 	</div>
 	<div class="6u 12u(small)">
 		<h2>教室位置</h2>
-		<button class="map-tab tab-active">魔法楊格</button>
-		<!-- <button class="map-tab ">建置中</button> -->
-		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.770095715296!2d120.33602731511589!3d22.73678508509849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0fd4ac16da03%3A0xefa180279ecd7965!2zODEx6auY6ZuE5biC5qWg5qKT5Y2A5riF5bmz6KGXNTHlt7cyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1464677823171" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<button class="map-tab tab-active" id="map_tab1">魔法楊格</button>
+		<button class="map-tab " id="map_tab2">鳳甲教室</button>
+		<iframe class="contact-map" id="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.770095715296!2d120.33602731511589!3d22.73678508509849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0fd4ac16da03%3A0xefa180279ecd7965!2zODEx6auY6ZuE5biC5qWg5qKT5Y2A5riF5bmz6KGXNTHlt7cyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1464677823171" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe class="contact-map" id="map2" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.0001632691574!2d120.34262101496041!3d22.61646908516021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1b52954476cf%3A0xe1f28a4d986b1bc9!2zODMw6auY6ZuE5biC6bOz5bGx5Y2A5Yex5peL6LevNDEz6Jmf!5e0!3m2!1szh-TW!2stw!4v1465494307861" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<script>
+			$("#map_tab1").click(function(){
+				$(this).addClass("tab-active");
+				$(this).siblings().removeClass("tab-active");
+				$("#map1").css("display","block");
+				$("#map2").css("display","none");
+			})
+			$("#map_tab2").click(function(){
+				$(this).addClass("tab-active");
+				$(this).siblings().removeClass("tab-active");
+				$("#map2").css("display","block");
+				$("#map1").css("display","none");
+			})
+
+		</script>
 	</div>
-	
+
 	
 	<!-- <div class="ft-container">
 	<p><i class="fa fa-phone"></i>0930924323</p>
 
-	<p><i class="fa fa-map-marker"></i>高雄市楠梓區清平街51巷25號</p>
+	<p><i class="fa fa-map-marker"></i>高雄市鳳山區凱旋路413號</p>
 	<p><i class="fa fa-facebook"></i>魔法楊格</p>
 	</div> -->
 </footer>
+<!--  Analytics  -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74694826-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
 				"image",
 				"image_tag"
 			],
@@ -166,14 +178,6 @@
 			[
 				"ma",
 				"margin-top"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"trans",
@@ -444,8 +448,8 @@
 	},
 	"file_history":
 	[
-		"/Users/jacklin/ror/flipMath/app/assets/stylesheets/home.scss",
 		"/Users/jacklin/ror/flipMath/app/views/index/home.html.erb",
+		"/Users/jacklin/ror/flipMath/app/assets/stylesheets/home.scss",
 		"/Users/jacklin/ror/flipMath/app/assets/stylesheets/application.css",
 		"/Users/jacklin/ror/flipMath/app/views/layouts/application.html.erb",
 		"/Users/jacklin/ror/flipMath/config/initializers/active_admin.rb",
@@ -573,6 +577,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"max-width",
 			"image_",
 			"image",
 			"img",
