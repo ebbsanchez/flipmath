@@ -104,15 +104,26 @@ hr {
 }
 
 #about {
+	position: relative;
 	font-size: 18px;
 	padding-right: 40%;
 	margin: 0 auto;
+	padding-bottom: 261px;
 	max-width: 1200px;
 	@media #{$information-phone}{
 		padding: 10px;
 		ul{
 			padding-left: 20px;
 		}
+	}
+	.teacher-selfie {
+		height: auto;
+		right: 0;
+		z-index: -1;
+		position: absolute;
+		right:0;
+		width: 500px;
+		margin-top: -200px;	
 	}
 	.block {
 		width: 500px;
@@ -122,6 +133,8 @@ hr {
 	p {
 		padding-left: 30px;
 	}
+
+
 }
 
 #methods {

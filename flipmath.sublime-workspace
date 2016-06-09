@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"image",
+				"image_tag"
+			],
+			[
+				"teac",
+				"teacher"
+			],
+			[
 				"max",
 				"max-width"
 			],
@@ -407,14 +415,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/admin/dashboard.rb",
-			"settings":
-			{
-				"buffer_size": 907,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -444,7 +444,13 @@
 	},
 	"file_history":
 	[
+		"/Users/jacklin/ror/flipMath/app/assets/stylesheets/home.scss",
 		"/Users/jacklin/ror/flipMath/app/views/index/home.html.erb",
+		"/Users/jacklin/ror/flipMath/app/assets/stylesheets/application.css",
+		"/Users/jacklin/ror/flipMath/app/views/layouts/application.html.erb",
+		"/Users/jacklin/ror/flipMath/config/initializers/active_admin.rb",
+		"/Users/jacklin/ror/flipMath/app/admin/billboard.rb",
+		"/Users/jacklin/ror/flipMath/app/admin/dashboard.rb",
 		"/Users/jacklin/Documents/web/template/html5up-fractal 拷貝/assets/css/images/pattern-size1.svg",
 		"/Users/jacklin/Documents/web/template/html5up-fractal 拷貝/assets/css/images/pattern-size2.svg",
 		"/Users/jacklin/Desktop/stylesheet.css",
@@ -476,7 +482,6 @@
 		"/Users/jacklin/ror/tkuSecret/app/assets/javascripts/skel/test.js",
 		"/Users/jacklin/ror/tkuSecret/app/assets/javascripts/test.js",
 		"/Users/jacklin/Documents/web/Tibame:practice/skeljs.html",
-		"/Users/jacklin/ror/flipMath/app/admin/dashboard.rb",
 		"/Users/jacklin/ror/flipMath/app/views/welcome/index.html.erb",
 		"/Users/jacklin/ror/flipMath/app/views/welcome/say.html.erb",
 		"/Users/jacklin/ror/flipMath/app/controllers/welcome_controller.rb",
@@ -568,6 +573,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"image_",
 			"image",
 			"img",
 			"wcl",
@@ -626,37 +632,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/admin/dashboard.rb",
-					"settings":
-					{
-						"buffer_size": 907,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								907,
-								907
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -724,6 +701,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 199.0,
 	"status_bar_visible": true
 }

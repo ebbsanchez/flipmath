@@ -10,6 +10,7 @@ Rails.application.config.assets.precompile += %w( method2.jpg )
 Rails.application.config.assets.precompile += %w( method3.jpg )
 Rails.application.config.assets.precompile += %w( method4.jpg )
 Rails.application.config.assets.precompile += %w( image01.png )
+Rails.application.config.assets.precompile += %w( photo/selfie.png )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
