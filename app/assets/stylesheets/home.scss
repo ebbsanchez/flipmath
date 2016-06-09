@@ -114,6 +114,7 @@ hr {
 		padding: 10px;
 		ul{
 			padding-left: 20px;
+			padding-top: 200px;
 		}
 	}
 	.teacher-selfie {
@@ -124,6 +125,10 @@ hr {
 		right:0;
 		width: 500px;
 		margin-top: -200px;	
+		@media #{$information-phone}{
+			opacity: 0.3;
+			margin-top: -450px;
+		}
 	}
 	.block {
 		width: 500px;
