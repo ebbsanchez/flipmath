@@ -400,6 +400,7 @@ hr {
 	@media #{$information-phone} {
 		display: block;
 	}
+	
 }
 .text-center {	text-align: center;	}
 .hover-vis {	opacity: 0;		}
@@ -420,10 +421,3 @@ hr {
 	}
 }
 .test{	height:1000px;	}
-
-.small_word {
-	position:relative;
-	top:-50px;
-	font-size: 20px;
-	
-}
