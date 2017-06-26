@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'bundler/gem_tasks'
 
 desc 'Creates a test rails app for the specs to run against'
@@ -52,3 +53,11 @@ task :console do
   ARGV.clear
   IRB.start
 end
+=======
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+
+require File.expand_path('../config/application', __FILE__)
+
+Rails.application.load_tasks
+>>>>>>> 35917f1b83b79ff12cefad5d2cee1e048b39fc83

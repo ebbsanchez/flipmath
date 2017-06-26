@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>FlipMath</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'skel/skel'%>
+  <%= javascript_include_tag 'skel/skel-layout'%>
+  <%= csrf_meta_tags %>
+  <link href='//fonts.googleapis.com/css?family=EB+Garamond:400' rel='stylesheet' type='text/css'>
+  <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-40310.js"></script>
+  <%= yield :head %>
+
+  <script>
+  	skel.breakpoints({
+  		small: "(max-width: 736px)"	
+  	})
+  	skel.layout({
+  		reset: "normalize",
+  		grid: true,
+  		containers: false
+  	});
+  </script>
+</head>
+<body class="">
+<div id="menu-button">
+	<!-- <a href="#" id="touch-menu"></a> -->
+</div>
+<nav>
+	<div class="logo">
+		
+	</div>
+	<ul>
+		<li>首頁</li>
+		<li>關於我們</li>
+		<li>教學方向</li>
+		<li>教室環境</li>
+		<li>聯絡我們</li>
+	</ul>
+</nav>
+
+<%= yield %>
+<!-- <article id="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d920.6095770895614!2d120.3005771!3d22.637441!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x3d79128fbeef1338!2z54Sh5ZCN5pep6aSQ5bqX!5e0!3m2!1szh-TW!2stw!4v1456155777661" width="1600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</article> -->
+<footer class="row">
+	<!-- <div id="footer-bg">聯<br>絡</div> -->
+	<div class="6u 12u(small)">
+		<div class="flex-box">
+			<div class="contact">
+				<p><i class="fa fa-envelope-o"></i>username@domain.com</p>
+				<p><i class="fa fa-phone"></i>0930924323</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="6u 12u(small)">
+		<div class="flex-box">
+			<div class="contact">	
+				<p><i class="fa fa-map-marker"></i>807 高雄市三民區火車路26號1樓</p>
+				<p><i class="fa fa-facebook"></i>翻轉數理</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

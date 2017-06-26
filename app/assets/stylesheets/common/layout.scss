@@ -1,0 +1,155 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+$break-small: 736px;
+$information-phone: "only screen and (max-width: 736px)";
+
+
+$red : #cf4b5e;
+$lightgreen : #b9dabb;
+$green      : #74ba9c;
+$yellow     : #f6e09e;
+$darkgreen  : #919c8e;
+
+
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body { margin: 0; padding: 0; background-color: transparent;}
+#menu-button {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #444444;
+	background:  image-url('menu.png');
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: fixed;
+	z-index: 50;
+	border-radius: 5px;
+	top: 5px;
+	left: 5px;
+	display: none;
+	#touch-menu {
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
+	@media #{$information-phone} {
+		display: block;
+	}
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(244,244,244,1);
+	text-align: center;
+	z-index: 100;
+	@media screen and (max-width: $break-small) {
+		display: none;
+		height: auto;
+		z-index: 1;
+	}
+	ul {
+		margin: auto;
+		padding: 0;
+		height: 100%;
+		list-style: none;
+		display: inline-block;
+		li {
+			display: inline-block;
+			margin-left: -4px;
+			margin: 0 10px 0 6px;
+			padding: 10px;
+			font-size: 20px;
+			height: 100%;
+			line-height: 28px;
+			box-shadow: inset 0 0 0 0 $lightgreen;
+			transition: all ease 0.3s;
+			&:hover {
+				box-shadow: inset 0 -100px 0 0 $lightgreen;
+			}
+			@media #{$information-phone} {
+				display: block;
+			}
+		}
+		li:first-child {
+			margin-left: 0;
+		}
+	}
+}
+.flex-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	@media #{$information-phone} {
+		display: block;
+		height: auto;
+	}
+}
+
+footer {
+	background-color: #272220;
+	position: relative;
+	width: 100%;
+	height: auto;
+	@media #{$information-phone} {
+		height: 175px;
+	}
+	&.row{
+		margin: 0;
+	}
+	& > div {
+		text-align: center;
+		height: 100%;
+		@media #{$information-phone} {
+			height: auto;
+		}
+	}
+	#footer-bg {
+		position: absolute;
+		top: 0;
+		left: -25px;
+		height: 100%;
+		background-color: #272220;
+		line-height: 145px;
+		font-size: 100px;
+		text-shadow: 10px 0px 10px #9a9a9a;
+		color: #f4f4f4;
+		font-weight: bolder;
+		font-family: serif;
+		padding: 30px 0;
+	}
+	.contact {
+		display: flex;
+		font-size: 20px;
+		display: inline-block;
+		padding: 5px 0;
+		@media #{$information-phone} {
+			
+			width: 100%;
+			/*margin: -15px 0 0 0 ;*/
+		}
+		p {
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			color: #f3f3f3;
+			height: 30px;
+
+			i {
+				margin: 0 10px;
+			}
+		}
+	}
+		
+}
+
